@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kalkulator BMI</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>KALKULATOR BMI</h1>
+		</header>
+		<div class="container">
+			<section class="left">
+				<article>
+					BMI adalah perhitungan matematis yang membandingkan berat badan dalam
+					kilogram dengan kuadrat tinggi badan dalam meter. Meskipun sederhana,
+					BMI banyak digunakan di seluruh dunia karena kemudahanannya dalam
+					memberikan gambaran umum tentang status berat badan seseorang. Rumus
+					perhitungan BMI: BMI = Berat badan (kg) / Tinggi badan (m) BMI adalah
+					salah satu cara termudah untuk mengevaluasi risiko kesehatan yang
+					berhubungan dengan berat badan.
+				</article>
+				<br />
+				<div class="calculator">
+					<div class="form-section">
+						<label for="jk">Jenis Kelamin: </label>
+						<input
+							type="radio"
+							name="gender"
+							id="laki-laki"
+							value="laki-laki" />
+						<label for="laki-laki">Laki-laki</label>
+						<input
+							type="radio"
+							name="gender"
+							id="perempuan"
+							value="perempuan" />
+						<label for="perempuan">Perempuan</label><br />
+						<br />
+
+						<div class="inputan">
+							<label for="tinggi">Input Tinggi Badan (cm):</label><br />
+							<input type="number" id="tinggi" placeholder="Tinggi" required />
+						</div>
+
+						<div class="inputan">
+							<label for="berat">Input Berat Badan (kg):</label><br />
+							<input type="number" id="berat" placeholder="Berat" required />
+						</div>
+
+						<div class="inputan">
+							<label for="umur">Input Umur:</label><br />
+							<input type="number" id="umur" placeholder="Umur" />
+						</div>
+
+						<button onclick="hitung()">Hitung</button>
+						<button onclick="reset()" class="red">Reset</button>
+					</div>
+				</div>
+				<br />
+				<article>
+					<h3>Keunggulan Fitur</h3>
+					<ul>
+						<li>Menghitung BMI dengan lebih cepat dan praktis</li>
+						<li>Mengetahui BMI dengan mudah dan akurat</li>
+						<li>mengetahui kategori kategori BMI</li>
+					</ul>
+				</article>
+			</section>
+			<section class="right">
+				<div class="result-section">
+					<h2>HASIL</h2>
+					<div class="result-area">
+						<span id="result"></span>
+					</div>
+				</div>
+				<br />
+				<table>
+					<tr>
+						<th>Kategori</th>
+						<th>BMI</th>
+					</tr>
+					<tr>
+						<td>Kurus</td>
+						<td>< 18,5</td>
+					</tr>
+
+					<tr>
+						<td>Normal</td>
+						<td>18,5 – 24,9</td>
+					</tr>
+
+					<tr>
+						<td>Berat badan berlebih</td>
+						<td>25 – 29,9</td>
+					</tr>
+
+					<tr>
+						<td>Obesitas Kelas 1</td>
+						<td>30 – 34,9</td>
+					</tr>
+
+					<tr>
+						<td>Obesitas Kelas 2</td>
+						<td>35 – 39,9</td>
+					</tr>
+
+					<tr>
+						<td>Obesitas Kelas 3</td>
+						<td>≥ 40</td>
+					</tr>
+				</table>
+			</section>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
