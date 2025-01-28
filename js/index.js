@@ -8,9 +8,8 @@ function hitung() {
 }
 
 function reset() {
-	const result = document.getElementById("result");
 	tinggi.value = "";
 	berat.value = "";
 	umur.value = "";
-	result.value = "";
+	document.getElementById("result").textContent = "";
 }
