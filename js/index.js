@@ -1,3 +1,4 @@
+// tombol untuk menghitung (tombol hitung)
 function hitung() {
 	const Tb = document.getElementById("tinggi").value;
 	const Bb = document.getElementById("berat").value;
@@ -7,6 +8,7 @@ function hitung() {
 	document.getElementById("result").innerText = result.toFixed(1);
 }
 
+// tombol untuk mereset tampilan form dan hasil
 function reset() {
 	tinggi.value = "";
 	berat.value = "";
