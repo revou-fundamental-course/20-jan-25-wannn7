@@ -117,6 +117,8 @@ footer p {
 	text-align: center;
 }
 
+/* untuk membuat web menjadi responsif di HP */
+
 @media (max-width: 480px) {
 	.container {
 		flex-direction: column;
