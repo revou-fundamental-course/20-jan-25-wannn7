@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -12,32 +13,31 @@ header {
 	font-size: large;
 	color: brown;
 	background-color: #edd481;
-	padding-left: 140px;
-	padding-right: 140px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin: 20px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin: 1rem;
 }
 .container {
 	display: flex;
-	gap: 20px;
-	padding: 5rem;
+	gap: 2rem;
+	padding: 2rem;
 	justify-content: center;
-	align-items: center;
-	font-size: 17px;
+	font-size: 1.5rem;
 }
 
 .left {
 	background-color: #dec881;
 	padding: 2rem;
 	width: 100%;
-	height: 100vh;
+	height: auto;
 }
 .right {
 	background-color: #dec881;
 	padding: 2rem;
 	width: 100%;
-	height: 100vh;
+	min-height: 150vh;
 }
 .jk {
 	padding-bottom: 12px;
@@ -45,7 +45,7 @@ header {
 }
 
 input[type="number"] {
-	width: 60%;
+	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	box-sizing: border-box;
@@ -115,4 +115,23 @@ footer p {
 	color: blue;
 	padding-bottom: 3px;
 	text-align: center;
+}
+
+@media (max-width: 480px) {
+	.container {
+		flex-direction: column;
+		font-size: 2rem;
+	}
+	.left {
+		flex-wrap: wrap;
+	}
+	.right {
+		flex-wrap: wrap;
+	}
+	table {
+		max-width: 100%;
+		min-height: 100%;
+		justify-content: center;
+		font-size: 1rem;
+	}
 }
